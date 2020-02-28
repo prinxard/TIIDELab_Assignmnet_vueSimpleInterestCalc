@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="vue.js"></script>
+    <title>SImple Interest Calculator</title>
+</head>
+
+<body>
+    <div id="calculator">
+        <div class="container">
+            <form action="#" class="form">
+                <h1>Simple Interest Calculator</h1>
+
+                <div class="form-control">
+                    <label for="principal">Principal</label><br>
+                    <input type="tel" class="form-control" name="principal" v-model="principal">
+                </div>
+
+                <div class="form-control">
+                    <label for="rate">Rate</label><br>
+                    <input type="tel" class="form-control" name="rate" v-model="rate">
+                </div>
+
+                <div class="form-control">
+                    <label for="time">Time in years</label><br>
+                    <input type="tel" class="form-control" name="time" v-model="time">
+                </div>
+                <h2>{{ calcInterest }} Naira</h2> 
+            <button v-on:click = "computeReset">Reset</button>
+            </form>
+            
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
