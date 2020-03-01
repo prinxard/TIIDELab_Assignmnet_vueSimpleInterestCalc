@@ -5,7 +5,6 @@ data: {
 principal: '',
 rate: '',
 time: '',
-calcPayment: '',
 computeReset: ''
 },
 computed: {
